@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*
+============================ SUMMARY ============================
+1. Imports and general styles(color, typo, button)
+4. Header product page 
+
+*/
+
+/* ============== 1. IMPORTS AND GENERAL STYLES ============= */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,400;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&display=swap');
+
+:root {
+ --font-abel:  'Abel', sans-serif;
+ --font-poppins: 'Poppins', sans-serif;
+ --font-playfair:  'Playfair Display', serif;
+
+  
+ --c-text: black;
+--bg-white: whitesmoke;
+--bg-accent: #96AB9E;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: var(--font-abel);
+  color: var(--c-text);
+  background-color: var(--bg-white);
+  line-height:1.6;
+
+}
+
+
+button {
+  background-color: purple;
+}
+
+.h1 {
+ font-size:1.8rem;
+
+}
+
+/* ============== 4. Header (productpages) ============ */
+
+.header-container {
+
+}
+
+.banner {
+  background-color: var(--bg-accent);
+  display:flex;
+  justify-content: center;
+}
+
+.banner-text {
+  color:white;
+}
+
+.header-container--botttom{
+  margin-top:30px;
+
+ display: flex;
+ justify-content: space-around;
+}
+
+ .logo{
+background-image: url(../public/images/logo3.png);
+height: 50px;
+width: 150px;
+background-repeat: no-repeat;
+background-size: contain;
+/* margin-left:30px; */
+ 
+}
+
+
+
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding:10px;
+ 
+  
+}
+
+a {
+  text-decoration: none;
+  color:var(--c-text)
+}
+
+li :hover{
+
+font-weight: bold;
+/* text-decoration: underline; */
+
+} 
+
+.header-icons{
+display:flex;
+justify-content: space-around;
+width: 90px;
+margin-top:5px;
+}
+
+.cart{
+background-image: url(../public/images/cart.png);
+height: 20px;
+width: 20px;;
+background-repeat: no-repeat;
+background-size: contain;
+
+}
+
+.cart:hover{
+height: 22px;;
+width: 22px;;
+}
+
+.account{
+  background-image: url(../public/images/account.png);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  }
+  
+.account:hover{
+  height: 22px;;
+  width: 22px;;
+  }
+  .search{
+    background-image: url(../public/images/search.png);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    }
+.search:hover{
+  height: 22px;;
+  width: 22px;
+  }
