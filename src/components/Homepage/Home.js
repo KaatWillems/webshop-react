@@ -1,8 +1,11 @@
 import React from 'react'
+import Headerhome from './Headerhome'
 
 function Home() {
   return (
-    <div>Home</div>
+    <>
+    <Headerhome />
+    </>
   )
 }
 
