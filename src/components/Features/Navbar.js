@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from  'react-router-dom'
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <ul className='navbar'>    
+    <ul className={props.className}>    
          <Link to="/products/jeans"><li>Jeans</li></Link> 
          <Link to="/products/dresses"><li>Dresses</li></Link> 
          <Link to="/products/tops"><li>Tops</li></Link> 

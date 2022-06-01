@@ -1,6 +1,8 @@
 /*
 ============================ SUMMARY ============================
 1. Imports and general styles(color, typo, button)
+2. Homepage 
+3. Header homepage 
 4. Header product page 
 
 */
@@ -17,7 +19,7 @@
 
   
  --c-text: black;
---bg-white: whitesmoke;
+--bg-white: white;
 --bg-accent: #96AB9E;
 
 }
@@ -46,6 +48,86 @@ button {
 
 }
 
+/* ============== 3. Header (homepage) ============ */
+
+.headerhome-cont {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-insta-cont{
+  display:flex;
+  justify-content: space-around;
+
+}
+
+/* instabubble: */
+
+.insta-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  /* border:1px red solid */
+}
+
+.bubble{
+width: 70px;
+height: 70px;
+border-radius: 50%;
+overflow: hidden;
+border: 2px solid transparent;
+background-image: linear-gradient(white, white), radial-gradient(circle at top left, red, orange);
+background-origin: border-box;
+background-clip: content-box, border-box;
+
+border-right:0;
+/* border-bottom:0; */
+animation: instaloader 2s infinite linear;
+position:relative;
+}
+
+
+
+@keyframes instaloader {
+  0% {
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+
+
+.thumb{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+.insta-img {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+    /* display: block;  */
+  object-fit: cover; 
+ position:absolute;
+ /* left:-10px; */
+
+}
+
+
+
+.text {
+
+}
+
 /* ============== 4. Header (productpages) ============ */
 
 .header-container {
@@ -63,29 +145,46 @@ button {
 }
 
 .header-container--botttom{
-  margin-top:30px;
+  margin-top:20px;
 
  display: flex;
  justify-content: space-around;
 }
 
- .logo{
-background-image: url(../public/images/logo3.png);
-height: 50px;
-width: 150px;
-background-repeat: no-repeat;
-background-size: contain;
-/* margin-left:30px; */
- 
+.navbar-product-page{
+  margin-top:10px;
 }
 
 
+ .logo{
+/* background-image: url(../public/images/logo3.png); */
+background-image: url(../src/images/logo4.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+/* margin-left:30px; */
+/* border:solid 1px red; */
+ 
+}
+
+.logo-home{
+  height:100px;
+  width: 200px;  
+  /* background-size: cover;
+  background-position:center; */
+}
+
+.logo-small{
+  height:50px;
+  width: 150px;
+  /* border:1px red solid;  */
+}
 
 
 .navbar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 li {
@@ -111,7 +210,7 @@ font-weight: bold;
 display:flex;
 justify-content: space-around;
 width: 90px;
-margin-top:5px;
+margin-top:13px;
 }
 
 .cart{
