@@ -84,7 +84,7 @@ background-clip: content-box, border-box;
 
 border-right:0;
 /* border-bottom:0; */
-animation: instaloader 2s infinite linear;
+animation: instaloader 4s infinite linear;
 position:relative;
 }
 
