@@ -53,13 +53,26 @@ button {
 .headerhome-cont {
   display:flex;
   flex-direction: column;
-  align-items: center;
+   justify-content: center;
+   align-items: center;
+ 
+  /* border:1px purple solid */
 }
 
 .nav-insta-cont{
   display:flex;
-  justify-content: space-around;
+  flex-direction:column;
+ align-items: center;
+ 
+  /* border:1px green solid; */
+  width:100%;
+}
 
+.instabubble-cont-homepage {
+  display:flex;
+  align-self:flex-start;
+  margin-left:8%;
+  margin-top:-30px;
 }
 
 /* instabubble: */
@@ -69,8 +82,10 @@ button {
   justify-content: center;
   align-items: center;
   width: 100px;
-  /* border:1px red solid */
+  /* border:1px red solid; */
+  align-self:flex-start;
 }
+
 
 .bubble{
 width: 70px;
@@ -119,12 +134,21 @@ position:relative;
   object-fit: cover; 
  position:absolute;
  /* left:-10px; */
+ cursor:pointer;
 
 }
 
+.insta-img:hover{
+  opacity: 0.5 black;
+  
+}
 
 
-.text {
+.follow-text {
+font-size: 0.7rem;
+width: 120px;
+margin-top:10px;
+/* border: 1px solid blue */
 
 }
 
@@ -138,10 +162,12 @@ position:relative;
   background-color: var(--bg-accent);
   display:flex;
   justify-content: center;
+  width: 100%;
 }
 
 .banner-text {
   color:white;
+  cursor:default;
 }
 
 .header-container--botttom{
@@ -194,10 +220,22 @@ li {
   
 }
 
-a {
+.links-nav{
   text-decoration: none;
-  color:var(--c-text)
+  color:var(--c-text) 
 }
+
+.links-nav:hover{
+  font-weight: 900;
+}
+
+
+.link-underline {
+  /* text-decoration: none; */
+  color:var(--c-text) ;
+  
+}
+
 
 li :hover{
 
@@ -251,4 +289,12 @@ width: 22px;;
 .search:hover{
   height: 22px;;
   width: 22px;
+  }
+
+  /* ====== 5. COLLAGE (HOME) ========  */
+
+  .img-collage-1{
+    height: 200px;
+    width: 100px;
+    
   }

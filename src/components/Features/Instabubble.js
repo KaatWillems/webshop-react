@@ -5,17 +5,24 @@ import pic1 from '../../images/insta.png'
 function Instabubble() {
   return (
     <>
-        
+        <a href="https://www.instagram.com/fabriquefrancois/" target="_blank" >
         <div className='insta-container'>
                 <div className="bubble">                  
-                    <a href="https://www.instagram.com/fabriquefrancois/" target="_blank">
+                    
                         <div className="thumb">
+                           
                             {/* <img src={`../../../src/images/insta.png`} alt="insta"/> */}
                         </div>                   
-                    </a>
+                    
                 </div>
-             <img src={pic1} alt="insta" className='insta-img'/> 
+                
+             <img src={pic1} alt="@fabriquefrancois" className='insta-img'/> 
+             
        </div>
+       </a>
+       <div className='follow-text'> Volg <a href="https://www.instagram.com/fabriquefrancois/" target="_blank" className='link-underline'> @fabriquefrancois </a> 
+        <br /> op Instagram</div>
+        
     </>
 
   )
