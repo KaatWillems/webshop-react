@@ -11,6 +11,7 @@ function Navbar(props) {
          <Link to="/products/trousers" className='links-nav'><li>Trousers</li></Link> 
          <Link to="/products/skirts" className='links-nav'><li>Skirts</li></Link> 
          <Link to="/products/jackets" className='links-nav'><li>Jackets</li></Link> 
+         <Link to="/products" className='links-nav'><li>All</li></Link> 
 
 
     </ul>

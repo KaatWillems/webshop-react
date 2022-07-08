@@ -21,7 +21,7 @@ function Headerproduct() {
           
              <Navbar className="navbar navbar-product-page"  />
              <div className='header-icons'>
-                <div className='cart'></div>
+               <Link to='/cart'> <div className='cart'></div></Link>
                 <div className='account'></div>
                  <div className='search'></div>
                </div>    
