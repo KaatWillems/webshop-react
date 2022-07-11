@@ -32,7 +32,7 @@ function App() {
     <Routes>
 
       <Route index element={<Home/>} /> 
-      <Route path="/home" element={<Home/>} /> 
+      <Route path="/home" element={<Home products={products}/>} /> 
       <Route path="*" element={<div>404 page not found</div>} />
       <Route path="/products" element={<Allproducts products={products}/>} /> 
       {/* Dresses, Tops, Sweaters, Trousers, Skirts, Jackets  */}

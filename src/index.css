@@ -318,36 +318,64 @@ width: 22px;;
   /* ====== 5. COLLAGE (HOME) ========  */
 
   .featured-collage-container{
-    padding: 5% 10% 5% 10%;
+   
+    margin: 5% 10% 5% 10%;
+    width: 90vw;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr ;
+    gap:0.1em;
+    border:1px solid blue;
+    /* display:flex;
+    justify-content: center; */
+
+
+    
   }
 
   .img-collage-1{
     height:400px;
     width: 250px;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end:   3;
     
   }
 
   .img-collage-2{
     height:200px;
     width: 200px;
-    
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
 
   .img-collage-3{
     height:200px;
     width: 200px;
-    
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    /* margin-top:200px;
+    margin-left:-200px; */
+   
+   
   }
   .img-collage-4{
     height:400px;
     width: 250px;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end:   3;
+    
+   
     
   }
   /* ====== 6. FEATURED COLLECTION (HOME) ========  */
   .featured-collection-container {
     background-color: var(--bg-accent);
     height: 500px;
-    width: 100vw;
+    /* width: 100vw; */
     padding:30px;
 
   }
