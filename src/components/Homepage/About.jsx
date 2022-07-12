@@ -6,7 +6,9 @@ function About() {
   return (
     <div className='home-about-us-container'>
 
-    <img src={about} alt="" className='home-about-us-img' />
+
+
+    <div style={{ backgroundImage: `url(${about})` }} className='home-about-us-img'></div>
 
     <div className='about-us-text-cont'>
         <div className='about-us-text'>

@@ -5,7 +5,8 @@ import Product from './Product'
 
 function Productsdresses(props) {
 
-  console.log(props.products)  
+  // console.log(props.products)  
+  // console.log(props.cartcount)
 
   let dresses = props.products.filter(product => product.type === "dresses")
   console.log(dresses)
@@ -20,7 +21,7 @@ function Productsdresses(props) {
   return (
     <>
         
-        <Headerproduct />
+        <Headerproduct cartcount={props.cartcount}/>
         <div className='productpage-container'>
             <div className='title-container'>
                 <h1 className='h1 h1-product'> Dresses</h1>

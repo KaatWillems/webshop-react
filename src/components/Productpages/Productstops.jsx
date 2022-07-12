@@ -29,7 +29,7 @@ function Productstops(props) {
          
 
             {/* <div> {props.products.map(productx => <Product productx={productx} /> )}</div> */}
-            <div> {tops.map(top => <Product productx={top} addToCart={props.addToCart} /> )}</div>
+            <div className='product-container'> {tops.map(top => <Product productx={top} addToCart={props.addToCart} /> )}</div>
 
                   
 

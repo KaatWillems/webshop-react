@@ -16,35 +16,44 @@ import Cart from './components/Cart/Cart'
 import products from './products.json'
 
 function App() {
-  const [cartitems, setCartitems] = useState('')
-
-  const addToCart = (addedItem) => {
-    
+  const [cartitems, setCartitems] = useState('');
+  const [cartcount, setCartcount] =useState(0);
+  const addToCart = (addedItem) => {  
 
     setCartitems([...cartitems, addedItem])
-
+    setCartcount(cartitems.length +1)
     //console.log(addedItem)
   }
   console.log(cartitems)
+
+
+  
+
+  // const incrementCart = () => {
+    
+    
+  // }
+
+
   return (
     <Router>
 
     <Routes>
 
-      <Route index element={<Home products={products}/>} /> 
-      <Route path="/home" element={<Home products={products}/>} /> 
+      <Route index element={<Home products={products} cartcount={cartcount}/>} /> 
+      <Route path="/home" element={<Home products={products} cartcount={cartcount}/>} /> 
       <Route path="*" element={<div>404 page not found</div>} />
       <Route path="/products" element={<Allproducts products={products}/>} /> 
       {/* Dresses, Tops, Sweaters, Trousers, Skirts, Jackets  */}
       <Route path="/products/jeans" element={<Productsjeans products={products} addToCart={addToCart}/>} /> 
-      <Route path="/products/dresses" element={<Productsdresses products={products} addToCart={addToCart}/>} /> 
+      <Route path="/products/dresses" element={<Productsdresses products={products} addToCart={addToCart} cartcount={cartcount}/>} /> 
       <Route path="/products/tops" element={<Productstops products={products} addToCart={addToCart}/>} /> 
       <Route path="/products/sweaters" element={<Productssweaters products={products} addToCart={addToCart}/>} /> 
       <Route path="/products/trousers" element={<Productstrousers products={products} addToCart={addToCart}/>} /> 
       <Route path="/products/skirts" element={<Productsskirts products={products} addToCart={addToCart}/>} /> 
       <Route path="/products/jackets" element={<Productsjackets products={products} addToCart={addToCart}/>} /> 
 
-      <Route path="/cart" element={<Cart cartitems={cartitems}/>} /> 
+      <Route path="/cart" element={<Cart cartitems={cartitems} cartcount={cartcount}/>} /> 
       </Routes>
     </Router>
   );

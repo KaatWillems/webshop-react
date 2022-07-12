@@ -87,9 +87,11 @@ body {
 .home-headericons{
  display:flex;
  align-self:flex-end ;
- margin-top:-30px;display:flex;
+ margin-top:-30px;
+ display:flex;
   justify-content: space-around;
   width: 90px;  
+  margin-right:4%;
   /* border:solid 1px orange; */
 }
 
@@ -174,6 +176,18 @@ margin-top:10px;
 
 }
 
+.count-badge-cart{
+  color:#080808;
+  font-family: var(--font-abel);
+text-decoration:none;
+  
+}
+
+.cart-bag-icon{
+  color:#080808;
+  font-size:1.2em ;
+  text-decoration:none;
+}
 /* ============== 4. Header (productpages) ============ */
 
 .header-container {
@@ -434,7 +448,8 @@ width: 22px;;
     .home-about-us-container{
        padding: 60px 30px; 
        display:flex;
-       justify-content: space-around;
+       justify-content:center;
+       gap:10em;
     }
     .about-us-text-cont{
       display:flex;
@@ -443,15 +458,19 @@ width: 22px;;
     }
 
     .home-about-us-img{
-      width: 400px;
+      width: 450px;
       height: 200px;
+      background-size: cover;
+
     }
 
     .about-us-text{
-     margin-top:10px;
-      width: 300px;
+     margin-top:20px;
+      width: 470px;
       text-align: center;
-      margin-bottom:25px;
+      margin-bottom:15px;
+      font-size: 1.1em;
+      
     }
     .btn-green {
         background-color: var(--bg-accent);

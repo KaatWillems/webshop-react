@@ -22,10 +22,10 @@ function Allproducts(props) {
         <Headerproduct />
         <div className='productpage-container'>
             <div className='title-container'>
-                <h1 className='h1'> All items</h1>
+                <h1 className='h1 h1-product'> All items</h1>
             </div>
            {/* <div> {products.map(productx => <Product productx={productx} /> )}</div> */}
-              <div> {props.products.map(productx => <Product productx={productx} /> )}</div>
+           <div className='product-container'> {props.products.map(productx => <Product productx={productx} /> )}</div>
 
         </div>
 

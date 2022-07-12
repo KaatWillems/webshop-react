@@ -1,9 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Instabubble from '../Features/Instabubble'
 import Logo from '../Features/Logo'
 import Navbar from '../Features/Navbar'
+import { AiOutlineShopping } from "react-icons/ai";
+import { Input, Select, Button, Badge } from "antd";
 
-function Headerhome() {
+function Headerhome(props) {
   return (
     <div className='headerhome-cont'>
       <div className="banner">
@@ -18,7 +21,7 @@ function Headerhome() {
             <Navbar />
 
             <div className='home-headericons'>
-                <div className='cart'></div>
+            <Link to='/cart'> <Badge count={props.cartcount} className='count-badge-cart'><AiOutlineShopping className='cart-bag-icon'/></Badge></Link>
                 <div className='account'></div>
                  <div className='search'></div>
             </div>    

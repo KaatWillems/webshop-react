@@ -3,8 +3,12 @@ import Navbar from '../Features/Navbar'
 import { Link } from 'react-router-dom'
 import Logo from '../Features/Logo'
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { AiOutlineShopping } from "react-icons/ai";
+import { Input, Select, Button, Badge } from "antd";
 
-function Headerproduct() {
+function Headerproduct(props) {
+console.log(props.cartcount);
+
   return (
   <>
       <div className="header-container">
@@ -21,7 +25,7 @@ function Headerproduct() {
           
              <Navbar className="navbar navbar-product-page"  />
              <div className='header-icons'>
-               <Link to='/cart'> <div className='cart'></div></Link>
+             <Link to='/cart'> <Badge count={props.cartcount} className='count-badge-cart'><AiOutlineShopping className='cart-bag-icon'/></Badge></Link>
                 <div className='account'></div>
                  <div className='search'></div>
                </div>    

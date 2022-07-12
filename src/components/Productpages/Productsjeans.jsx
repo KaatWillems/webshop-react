@@ -30,7 +30,7 @@ function Productsjeans(props) {
          
 
             {/* <div> {props.products.map(productx => <Product productx={productx} /> )}</div> */}
-            <div> {jeans.map(jeans => <Product productx={jeans} addToCart={props.addToCart}  /> )}</div>
+            <div className='product-container'> {jeans.map(jeans => <Product productx={jeans} addToCart={props.addToCart}  /> )}</div>
 
                   
 
