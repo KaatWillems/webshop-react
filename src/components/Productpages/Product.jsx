@@ -27,7 +27,7 @@ function Product(props) {
             
          
             <div>{props.productx.name}</div>
-            <div>{props.productx.price}</div>
+            <div>€{props.productx.price}</div>
             <button className='btn btn-green btn-addcart' onClick={handleClick}>Add to cart</button>
         </div>
     

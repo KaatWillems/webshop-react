@@ -26,21 +26,21 @@
     {
         "picture": "sweater.webp",
         "name": "Cindy Sweater",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "sweaters"      
 
     }, 
     {
         "picture": "trouser.webp",
         "name": "Janne Trousers",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "trousers"      
 
     }, 
     {
         "picture": "skirt.webp",
         "name": "Emily Skirt",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "skirts"      
 
     }, 
@@ -48,28 +48,28 @@
     {
         "picture": "jacket.webp",
         "name": "Noah Blazer",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jackets"      
 
     },
     {
         "picture": "blouse2.webp",
         "name": "Lisa Blouse",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "tops"      
 
     },
     {
         "picture": "jeans2.webp",
         "name": "Tina Jeans",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jeans"      
 
     }, 
     {
         "picture": "dress2.webp",
         "name": "Ilona Dress",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "dresses"      
 
     }, 
@@ -77,21 +77,21 @@
     {
         "picture": "sweater2.webp",
         "name": "Mila Sweater",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "sweaters"      
 
     }, 
     {
         "picture": "trousers2.webp",
         "name": "Tina Trousers",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "trousers"      
 
     }, 
     {
         "picture": "skirt2.webp",
         "name": "Fiona Skirt",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "skirts"      
 
     }, 
@@ -99,28 +99,28 @@
     {
         "picture": "jacket2.webp",
         "name": "lisa Blazer",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jackets"      
 
     } ,
     {
         "picture": "blouse3.webp",
         "name": "Sara Blouse",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "tops"      
 
     },
     {
         "picture": "jeans3.webp",
         "name": "Lore Jeans",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jeans"      
 
     }, 
     {
         "picture": "dress3.webp",
         "name": "Laura Dress",
-        "price": "€39.95",
+        "price": 39.95,
         "type": "dresses"      
 
     }, 
@@ -128,21 +128,21 @@
     {
         "picture": "sweater3.webp",
         "name": "Julie Sweater",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "sweaters"      
 
     }, 
     {
         "picture": "trousers3.webp",
         "name": "Kim Trousers",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "trousers"      
 
     }, 
     {
         "picture": "skirt3.webp",
         "name": "Eline Skirt",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "skirts"      
 
     }, 
@@ -150,28 +150,28 @@
     {
         "picture": "jacket.webp",
         "name": "Jolene Blazer",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jackets"      
 
     },
     {
         "picture": "blouse.webp",
         "name": "Lena Blouse",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "tops"      
 
     },
     {
         "picture": "jeans.webp",
         "name": "Mila Jeans",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jeans"      
 
     }, 
     {
         "picture": "dress.webp",
         "name": "Alesia Dress",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "dresses"      
 
     }, 
@@ -179,21 +179,21 @@
     {
         "picture": "sweater.webp",
         "name": "Cindy Sweater",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "sweaters"      
 
     }, 
     {
         "picture": "trouser.webp",
         "name": "Janne Trousers",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "trousers"      
 
     }, 
     {
         "picture": "skirt.webp",
         "name": "Emily Skirt",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "skirts"      
 
     }, 
@@ -201,14 +201,14 @@
     {
         "picture": "jacket.webp",
         "name": "Noah Blazer",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "jackets"      
 
     },
     {
         "picture": "dress2.webp",
         "name": "Alesia Dress",
-        "price": "€44.95",
+        "price": 44.95,
         "type": "dresses"      
 
     } 

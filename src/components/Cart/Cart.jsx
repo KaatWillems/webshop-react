@@ -15,22 +15,22 @@ function Cart(props) {
     const [subTotalPrice, setsubTotalPrice] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0)
 
-    useEffect(() => {
-      let price ;
-      props.cartitems.forEach((item) => {
+    // useEffect(() => {
+    //   let price ;
+    //   props.cartitems.forEach((item) => {
         
-        price = item.qty * item.price;
-        setTotalPrice(price);
-      });
+    //     price = item.qty * item.price;
+    //     setTotalPrice(price);
+    //   });
       
      
       
-    }, [props.cartitems, totalPrice, setTotalPrice]);
+    // }, [props.cartitems, totalPrice, setTotalPrice]);
 
     console.log(totalPrice);
   return (
    <>
-       <Headerproduct />
+       <Headerproduct cartcount={props.cartcount} />
        <h1 className='h1 h1-cart'>Your Cart ({props.cartcount})</h1>
        <h4 className='h4-cart'>Buy now or cry later </h4>
        {/* <h1>{props.cartitems.name}</h1> */}
